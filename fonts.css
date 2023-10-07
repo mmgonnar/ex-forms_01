@@ -1,0 +1,65 @@
+@font-face {
+  src: url(https://practicum-content.s3.us-west-1.amazonaws.com/fonts/moved_Ibmplexserif.woff2)
+      format("woff2"),
+    url(https://practicum-content.s3.us-west-1.amazonaws.com/fonts/moved_Ibmplexserif.woff)
+      format("woff"),
+    url(https://practicum-content.s3.us-west-1.amazonaws.com/fonts/moved_Ibmplexserif.ttf)
+      format("truetype");
+  font-family: "IBM Plex Serif";
+  font-weight: normal;
+}
+
+@font-face {
+  src: url(https://practicum-content.s3.us-west-1.amazonaws.com/fonts/moved_ubuntu.woff2)
+      format("woff2"),
+    url(https://practicum-content.s3.us-west-1.amazonaws.com/fonts/moved_ubuntu.woff)
+      format("woff"),
+    url(https://practicum-content.s3.us-west-1.amazonaws.com/fonts/moved_ubuntu.ttf)
+      format("truetype");
+  font-family: "Ubuntu";
+  font-weight: normal;
+}
+
+@font-face {
+  src: url(https://practicum-content.s3.us-west-1.amazonaws.com/fonts/moved_istokregular.woff2)
+      format("woff2"),
+    url(https://practicum-content.s3.us-west-1.amazonaws.com/fonts/moved_istokregular.woff)
+      format("woff"),
+    url(https://practicum-content.s3.us-west-1.amazonaws.com/fonts/moved_istokregular.ttf)
+      format("truetype");
+  font-family: "Istok Web";
+  font-weight: normal;
+}
+
+@font-face {
+  src: url(https://practicum-content.s3.us-west-1.amazonaws.com/fonts/moved_Ibmplexserifsemibold.woff2)
+      format("woff2"),
+    url(https://practicum-content.s3.us-west-1.amazonaws.com/fonts/moved_Ibmplexserifsemibold.woff)
+      format("woff"),
+    url(https://practicum-content.s3.us-west-1.amazonaws.com/fonts/moved_Ibmplexserifsemibold.ttf)
+      format("truetype");
+  font-family: "IBM Plex Serif";
+  font-weight: bold;
+}
+
+@font-face {
+  src: url(https://practicum-content.s3.us-west-1.amazonaws.com/fonts/moved_ubuntubold.woff2)
+      format("woff2"),
+    url(https://practicum-content.s3.us-west-1.amazonaws.com/fonts/moved_ubuntubold.woff)
+      format("woff"),
+    url(https://practicum-content.s3.us-west-1.amazonaws.com/fonts/moved_ubuntubold.ttf)
+      format("truetype");
+  font-family: "Ubuntu";
+  font-weight: bold;
+}
+
+@font-face {
+  src: url(https://practicum-content.s3.us-west-1.amazonaws.com/fonts/moved_istokbold.woff2)
+      format("woff2"),
+    url(https://practicum-content.s3.us-west-1.amazonaws.com/fonts/moved_istokbold.woff)
+      format("woff"),
+    url(https://practicum-content.s3.us-west-1.amazonaws.com/fonts/moved_istokbold.ttf)
+      format("truetype");
+  font-family: "Istok Web";
+  font-weight: bold;
+}
