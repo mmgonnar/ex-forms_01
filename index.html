@@ -71,9 +71,9 @@
                   id="font-family"
                   class="form__item form__item_el_font-family"
                 >
-                  <option>IBM Plex Serif</option>
-                  <option>Ubuntu</option>
-                  <option>Istok Web</option>
+                  <option value="ibm">IBM Plex Serif</option>
+                  <option value="ubuntu">Ubuntu</option>
+                  <option value="istok">Istok Web</option>
                 </select>
                 <label for="heading-font-size" class="form__label"
                   >Tamaño de la fuente del título</label
@@ -85,6 +85,7 @@
                   class="form__item form__item_el_heading-fontsize"
                   min="24"
                   max="80"
+                  value="32"
                 />
                 <label for="text-font-size" class="form__label"
                   >Tamaño de la fuente del texto</label
@@ -96,6 +97,7 @@
                   class="form__item form__item_el_text-fontsize"
                   min="12"
                   max="40"
+                  value="24"
                 />
                 <label for="pub-date" class="form__label"
                   >Fecha de publicación</label
@@ -130,6 +132,7 @@
                   id="text-color"
                   type="color"
                   class="form__item form__item_el_text-color"
+                  value="#979797"
                 />
                 <label for="content-width" class="form__label"
                   >Ancho del contenido</label
