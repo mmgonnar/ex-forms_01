@@ -27,37 +27,58 @@
               <fieldset
                 class="form__input-container form__input-container_ctrl_texts"
               >
-                <input type="text" class="form__item form__item_el_heading" />
                 <input
+                  id="heading"
+                  type="text"
+                  class="form__item form__item_el_heading"
+                />
+                <input
+                  id="subheading"
                   type="text"
                   class="form__item form__item_el_subheading"
                 />
-                <textarea class="form__item form__item_el_main-text"></textarea>
-                <input type="email" class="form__item form__item_el_email" />
+                <textarea
+                  id="main-text"
+                  class="form__item form__item_el_main-text"
+                ></textarea>
+                <input
+                  id="email"
+                  type="email"
+                  class="form__item form__item_el_email"
+                />
               </fieldset>
               <div class="form__line"></div>
               <fieldset
                 class="form__input-container form__input-container_ctrl_visual"
               >
-                <select class="form__item form__item_el_font-family">
+                <select
+                  id="font-family"
+                  class="form__item form__item_el_font-family"
+                >
                   <option>IBM Plex Serif</option>
                   <option>Ubuntu</option>
                   <option>Istok Web</option>
                 </select>
                 <input
+                  id="heading-font-size"
                   type="number"
                   class="form__item form__item_el_heading-fontsize"
                   min="24"
                   max="80"
                 />
                 <input
+                  id="text-font-size"
                   type="number"
                   class="form__item form__item_el_text-fontsize"
                   min="12"
                   max="40"
                 />
-                <input type="date" class="form__item form__item_el_pubdate" />
-                <select class="form__item form__item_el_image">
+                <input
+                  id="pub-date"
+                  type="date"
+                  class="form__item form__item_el_pubdate"
+                />
+                <select id="image" class="form__item form__item_el_image">
                   <option>Bombardier CS300</option>
                   <option>Hobbit-themed Boeing 777</option>
                   <option>Amur Tiger Boeing 747</option>
@@ -67,10 +88,12 @@
                 class="form__input-container form__input-container_ctrl_additional"
               >
                 <input
+                  id="text-color"
                   type="color"
                   class="form__item form__item_el_text-color"
                 />
                 <input
+                  id="content-width"
                   type="range"
                   class="form__item form__item_el_content-width"
                   min="30"
