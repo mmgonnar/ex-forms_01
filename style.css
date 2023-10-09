@@ -110,6 +110,7 @@
   width: 240px;
   margin: auto;
   padding-bottom: 50px;
+  border: 0;
 }
 
 /* Línea que separa los grupos de campos */
@@ -230,6 +231,7 @@
   margin: 0;
   width: 320px;
   height: 40px;
+  border: 0;
 }
 
 /* Estilos comunes para todos los botones */
