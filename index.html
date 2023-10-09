@@ -27,20 +27,28 @@
               <fieldset
                 class="form__input-container form__input-container_ctrl_texts"
               >
+                <label for="heading" class="form__label">Título</label>
                 <input
                   id="heading"
                   type="text"
                   class="form__item form__item_el_heading"
                 />
+                <label for="subheading" class="form__label">Subtítulo</label>
                 <input
                   id="subheading"
                   type="text"
                   class="form__item form__item_el_subheading"
                 />
+                <label for="main-text" class="form__label"
+                  >Texto principal</label
+                >
                 <textarea
                   id="main-text"
                   class="form__item form__item_el_main-text"
                 ></textarea>
+                <label for="email" class="form__label"
+                  >Correo electrónico</label
+                >
                 <input
                   id="email"
                   type="email"
@@ -51,6 +59,9 @@
               <fieldset
                 class="form__input-container form__input-container_ctrl_visual"
               >
+                <label for="font-family" class="form__label"
+                  >Familia tipográfica</label
+                >
                 <select
                   id="font-family"
                   class="form__item form__item_el_font-family"
@@ -59,6 +70,9 @@
                   <option>Ubuntu</option>
                   <option>Istok Web</option>
                 </select>
+                <label for="heading-font-size" class="form__label"
+                  >Tamaño de la fuente del título</label
+                >
                 <input
                   id="heading-font-size"
                   type="number"
@@ -66,6 +80,9 @@
                   min="24"
                   max="80"
                 />
+                <label for="text-font-size" class="form__label"
+                  >Tamaño de la fuente del texto</label
+                >
                 <input
                   id="text-font-size"
                   type="number"
@@ -73,11 +90,17 @@
                   min="12"
                   max="40"
                 />
+                <label for="pub-date" class="form__label"
+                  >Fecha de publicación</label
+                >
                 <input
                   id="pub-date"
                   type="date"
                   class="form__item form__item_el_pubdate"
                 />
+                <label for="image" class="form__label"
+                  >Portada del artículo</label
+                >
                 <select id="image" class="form__item form__item_el_image">
                   <option>Bombardier CS300</option>
                   <option>Hobbit-themed Boeing 777</option>
@@ -87,11 +110,17 @@
               <fieldset
                 class="form__input-container form__input-container_ctrl_additional"
               >
+                <label for="text-color" class="form__label"
+                  >Color del texto</label
+                >
                 <input
                   id="text-color"
                   type="color"
                   class="form__item form__item_el_text-color"
                 />
+                <label for="content-width" class="form__label"
+                  >Ancho del contenido</label
+                >
                 <input
                   id="content-width"
                   type="range"
