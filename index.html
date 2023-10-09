@@ -29,12 +29,14 @@
               >
                 <label for="heading" class="form__label">Título</label>
                 <input
+                  name="heading"
                   id="heading"
                   type="text"
                   class="form__item form__item_el_heading"
                 />
                 <label for="subheading" class="form__label">Subtítulo</label>
                 <input
+                  name="subheading"
                   id="subheading"
                   type="text"
                   class="form__item form__item_el_subheading"
@@ -43,6 +45,7 @@
                   >Texto principal</label
                 >
                 <textarea
+                  name="main-text"
                   id="main-text"
                   class="form__item form__item_el_main-text"
                 ></textarea>
@@ -50,6 +53,7 @@
                   >Correo electrónico</label
                 >
                 <input
+                  name="email"
                   id="email"
                   type="email"
                   class="form__item form__item_el_email"
@@ -63,6 +67,7 @@
                   >Familia tipográfica</label
                 >
                 <select
+                  name="font-family"
                   id="font-family"
                   class="form__item form__item_el_font-family"
                 >
@@ -74,6 +79,7 @@
                   >Tamaño de la fuente del título</label
                 >
                 <input
+                  name="heading-font-size"
                   id="heading-font-size"
                   type="number"
                   class="form__item form__item_el_heading-fontsize"
@@ -84,6 +90,7 @@
                   >Tamaño de la fuente del texto</label
                 >
                 <input
+                  name="text-font-size"
                   id="text-font-size"
                   type="number"
                   class="form__item form__item_el_text-fontsize"
@@ -94,6 +101,7 @@
                   >Fecha de publicación</label
                 >
                 <input
+                  name="pub-date"
                   id="pub-date"
                   type="date"
                   class="form__item form__item_el_pubdate"
@@ -101,7 +109,11 @@
                 <label for="image" class="form__label"
                   >Portada del artículo</label
                 >
-                <select id="image" class="form__item form__item_el_image">
+                <select
+                  name="image"
+                  id="image"
+                  class="form__item form__item_el_image"
+                >
                   <option>Bombardier CS300</option>
                   <option>Hobbit-themed Boeing 777</option>
                   <option>Amur Tiger Boeing 747</option>
@@ -114,6 +126,7 @@
                   >Color del texto</label
                 >
                 <input
+                  name="text-color"
                   id="text-color"
                   type="color"
                   class="form__item form__item_el_text-color"
@@ -122,6 +135,7 @@
                   >Ancho del contenido</label
                 >
                 <input
+                  name="content-width"
                   id="content-width"
                   type="range"
                   class="form__item form__item_el_content-width"
