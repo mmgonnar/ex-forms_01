@@ -116,36 +116,66 @@
                   id="image"
                   class="form__item form__item_el_image"
                 >
-                  <option>Bombardier CS300</option>
-                  <option>Hobbit-themed Boeing 777</option>
-                  <option>Amur Tiger Boeing 747</option>
+                  <option value="bombardier">Bombardier CS300</option>
+                  <option value="hobbit">Hobbit-themed Boeing 777</option>
+                  <option value="tiger">Amur Tiger Boeing 747</option>
                 </select>
               </fieldset>
               <fieldset
                 class="form__input-container form__input-container_ctrl_additional"
               >
+                <h3 class="form__heading form__heading_type_ctrl-el-heading">
+                  Número de columnas
+                </h3>
+                <input
+                  type="radio"
+                  name="number-of-columns"
+                  id="one-column"
+                  class="form__item form__item_el_number-of-columns"
+                  value="one-column"
+                />
+                <label
+                  for="one-column"
+                  class="form__label form__label_direction_right"
+                  >1</label
+                >
+                <input
+                  type="radio"
+                  name="number-of-columns"
+                  id="two-columns"
+                  class="form__item form__item_el_number-of-columns"
+                  value="two-columns"
+                />
+                <label
+                  for="two-columns"
+                  class="form__label form__label_direction_right"
+                  >2</label
+                >
                 <label for="text-color" class="form__label"
                   >Color del texto</label
                 >
                 <input
-                  name="text-color"
-                  id="text-color"
                   type="color"
                   class="form__item form__item_el_text-color"
+                  id="text-color"
+                  name="text-color"
                   value="#979797"
                 />
                 <label for="content-width" class="form__label"
-                  >Ancho del contenido</label
+                  >Anchura del contenido</label
                 >
                 <input
-                  name="content-width"
-                  id="content-width"
                   type="range"
                   class="form__item form__item_el_content-width"
                   min="30"
                   max="80"
                   step="10"
+                  id="content-width"
+                  name="content-width"
                 />
+                <h3 class="form__heading form__heading_type_ctrl-el-heading">
+                  Opciones adicionales
+                </h3>
               </fieldset>
             </div>
             <fieldset class="form__handlers">
