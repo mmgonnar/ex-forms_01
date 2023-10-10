@@ -39,7 +39,7 @@
   left: -320px;
 }
 
-/* Bloque con el ícono para esconder y mostrar la sección del formulario */
+/* Bloque con el icono para ocultar y mostrar la sección del formulario */
 
 .form__toggle {
   width: 50px;
@@ -63,7 +63,7 @@
   margin: auto;
 }
 
-/* Girar el icono la animación de la sección del formulario */
+/* Girar el ícono la animación de la sección del formulario */
 
 .form_is-closed .form__toggle-image {
   transform: rotate(180deg);
@@ -123,14 +123,14 @@
 /* Estilos comunes para todas las etiquetas label */
 
 .form__label {
+  display: block;
   margin: 35px auto 0;
   font-size: 20px;
   line-height: 30px;
-  display: block;
 }
 
 /* Estilos comunes para todos los campos de entrada */
-/*
+
 .form__item {
   border: 0;
   width: 100%;
@@ -142,82 +142,74 @@
   font-size: 14px;
   font-family: inherit;
 }
-*/
 
 /* Cambiar el color de contorno cuando el campo de entrada está activado */
-
+.form__item:focus {
+  outline-color: #fff6c5;
+}
 /* Estilos de los marcadores de posición */
 
 /* Campos de entrada */
 
-/* Selector de clase para el campo de entrada de texto principal {
+.form__item_el_main-text {
   background: #fff;
   height: 150px;
   font-size: 14px;
   padding: 6px 6px 4px;
   border: 1px solid #bcbcc4;
 }
-*/
 
-/* Selector del campo de entrada con el tipo `number` {
+.form__item[type="number"] {
   background-color: white;
   color: black;
   border: 1px solid #bcbcc4;
   padding: 0 4px;
 }
-*/
 
-/* Selector del campo de entrada con el tipo `date` {
+.form__item[type="date"] {
   background-color: white;
   color: black;
   border: 1px solid #bcbcc4;
   padding: 0 4px;
-  font-family: 'Alegreya Sans', sans-serif;
+  font-family: "Alegreya Sans", sans-serif;
 }
-*/
 
-/* Selector del campo de entrada con el tipo `color` {
+.form__item[type="color"] {
   height: 30px;
   width: 48px;
   border-bottom: 0;
   padding: 0;
 }
-*/
 
-/* Selector del campo de entrada con el tipo `range` {
+.form__item[type="range"] {
   width: 144px;
 }
-*/
 
 /* Campo de la lista desplegable con la clase form_item */
 
-/* select.form__item {
+select.form__item {
   background-color: white;
   color: black;
   border: 1px solid #bcbcc4;
 }
-*/
 
-/* Selector del campo del botón de radio {
+.form__item[type="radio"] {
   display: inline-block;
   width: 16px;
   height: 16px;
 }
-*/
 
-/* Selector del campo del botón de radio con el valor two-columns {
+.form__item[type="radio"][value="two-columns"] {
   margin-left: 25px;
 }
-*/
 
-/* Selector del campo del checkbox {
+.form__item[type="checkbox"] {
   display: inline-block;
   width: 16px;
   height: 16px;
   vertical-align: middle;
   margin: 0;
 }
-*/
 
 .form__label_direction_right {
   display: inline;
@@ -229,15 +221,15 @@
 /* Área para los botones y botones */
 
 .form__handlers {
-  margin: 0;
-  width: 320px;
-  height: 40px;
   border: 0;
+  margin: 0;
+  height: 40px;
+  font-size: 0;
 }
 
 /* Estilos comunes para todos los botones */
 
-/* .form__button {
+.form__button {
   width: 50%;
   height: 40px;
   font-size: 14px;
@@ -245,27 +237,27 @@
   margin: 0;
   padding-bottom: 5px;
   cursor: pointer;
-  transition: opacity .4s;
+  transition: opacity 0.4s;
   color: white;
   font-family: inherit;
 }
 
 .form__button:hover {
-  opacity: .7;
+  opacity: 0.7;
 }
-*/
 
 /* Cambiar el color de contorno cuando un botón está activado */
+.form__button:focus {
+  outline-color: #fff6c5;
+}
 
-/* Selector del botón enviar {
+.form__button[type="submit"] {
   background-color: #000;
 }
-*/
 
-/* Selector del botón reiniciar {
+.form__button[type="reset"] {
   background-color: #ea3a3a;
 }
-*/
 
 /* Estilos de la página */
 
