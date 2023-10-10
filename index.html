@@ -29,19 +29,19 @@
               >
                 <label for="heading" class="form__label">Título</label>
                 <input
-                  name="heading"
-                  id="heading"
                   type="text"
                   class="form__item form__item_el_heading"
+                  id="heading"
+                  name="heading"
                   placeholder="Título de tu artículo"
                   required
                 />
                 <label for="subheading" class="form__label">Subtítulo</label>
                 <input
-                  name="subheading"
-                  id="subheading"
                   type="text"
                   class="form__item form__item_el_subheading"
+                  id="subheading"
+                  name="subheading"
                   placeholder="Descripción breve"
                   required
                 />
@@ -49,9 +49,9 @@
                   >Texto principal</label
                 >
                 <textarea
-                  name="main-text"
-                  id="main-text"
                   class="form__item form__item_el_main-text"
+                  id="main-text"
+                  name="main-text"
                   placeholder="Introduce aquí el texto principal de tu artículo"
                   required
                 ></textarea>
@@ -59,10 +59,10 @@
                   >Correo electrónico</label
                 >
                 <input
-                  name="email"
-                  id="email"
                   type="email"
                   class="form__item form__item_el_email"
+                  id="email"
+                  name="email"
                   placeholder="hello@example.com"
                 />
               </fieldset>
@@ -74,9 +74,9 @@
                   >Familia tipográfica</label
                 >
                 <select
-                  name="font-family"
-                  id="font-family"
                   class="form__item form__item_el_font-family"
+                  id="font-family"
+                  name="font-family"
                 >
                   <option value="ibm">IBM Plex Serif</option>
                   <option value="ubuntu">Ubuntu</option>
@@ -86,42 +86,42 @@
                   >Tamaño de la fuente del título</label
                 >
                 <input
-                  name="heading-font-size"
-                  id="heading-font-size"
                   type="number"
                   class="form__item form__item_el_heading-fontsize"
                   min="24"
                   max="80"
+                  id="heading-font-size"
+                  name="heading-font-size"
                   value="32"
                 />
                 <label for="text-font-size" class="form__label"
                   >Tamaño de la fuente del texto</label
                 >
                 <input
-                  name="text-font-size"
-                  id="text-font-size"
                   type="number"
                   class="form__item form__item_el_text-fontsize"
                   min="12"
                   max="40"
+                  id="text-font-size"
+                  name="text-font-size"
                   value="24"
                 />
                 <label for="pub-date" class="form__label"
                   >Fecha de publicación</label
                 >
                 <input
-                  name="pub-date"
-                  id="pub-date"
                   type="date"
                   class="form__item form__item_el_pubdate"
+                  id="pub-date"
+                  name="pub-date"
                 />
                 <label for="image" class="form__label"
                   >Portada del artículo</label
                 >
                 <select
-                  name="image"
-                  id="image"
                   class="form__item form__item_el_image"
+                  id="image"
+                  name="image"
                 >
                   <option value="bombardier">Bombardier CS300</option>
                   <option value="hobbit">Hobbit-themed Boeing 777</option>
@@ -134,32 +134,39 @@
                 <h3 class="form__heading form__heading_type_ctrl-el-heading">
                   Número de columnas
                 </h3>
-                <input
-                  type="radio"
-                  name="number-of-columns"
-                  id="one-column"
-                  class="form__item form__item_el_number-of-columns"
-                  value="one-column"
-                  checked
-                />
                 <label
                   for="one-column"
                   class="form__label form__label_direction_right"
-                  >1</label
                 >
-                <input
-                  type="radio"
-                  name="number-of-columns"
-                  id="two-columns"
-                  class="form__item form__item_el_number-of-columns"
-                  value="two-columns"
-                  checked
-                />
+                  <input
+                    type="radio"
+                    name="number-of-columns"
+                    id="one-column"
+                    class="form__item form__item_el_number-of-columns"
+                    value="one-column"
+                    checked
+                  />
+                  <span
+                    class="form__pseudo-item form__pseudo-item_type_radio"
+                  ></span>
+                  <span class="form__label-text">1</span>
+                </label>
                 <label
                   for="two-columns"
                   class="form__label form__label_direction_right"
-                  >2</label
                 >
+                  <input
+                    type="radio"
+                    name="number-of-columns"
+                    id="two-columns"
+                    class="form__item form__item_el_number-of-columns"
+                    value="two-columns"
+                  />
+                  <span
+                    class="form__pseudo-item form__pseudo-item_type_radio"
+                  ></span>
+                  <span class="form__label-text">2</span>
+                </label>
                 <label for="text-color" class="form__label"
                   >Color del texto</label
                 >
@@ -185,32 +192,39 @@
                 <h3 class="form__heading form__heading_type_ctrl-el-heading">
                   Opciones adicionales
                 </h3>
-                <input
-                  type="checkbox"
-                  name="extra-option"
-                  id="black-background"
-                  class="form__item form__item_el_extra-options"
-                  value="black-background"
-                  checked
-                />
                 <label
                   for="black-background"
                   class="form__label form__label_direction_right"
-                  >Fondo negro</label
                 >
-                <input
-                  type="checkbox"
-                  name="extra-option"
-                  id="bold-heading"
-                  class="form__item form__item_el_extra-options"
-                  value="bold-heading"
-                  checked
-                />
+                  <input
+                    type="checkbox"
+                    name="extra-option"
+                    id="black-background"
+                    class="form__item form__item_el_extra-options"
+                    value="black-background"
+                  />
+                  <span
+                    class="form__pseudo-item form__pseudo-item_type_checkbox"
+                  ></span>
+                  <span class="form__label-text">Fondo negro</span>
+                </label>
                 <label
                   for="bold-heading"
                   class="form__label form__label_direction_right"
-                  >Titular en negrita</label
                 >
+                  <input
+                    type="checkbox"
+                    name="extra-option"
+                    id="bold-heading"
+                    class="form__item form__item_el_extra-options"
+                    value="bold-heading"
+                    checked
+                  />
+                  <span
+                    class="form__pseudo-item form__pseudo-item_type_checkbox"
+                  ></span>
+                  <span class="form__label-text">Titular en negrita</span>
+                </label>
               </fieldset>
             </div>
             <fieldset class="form__handlers">
