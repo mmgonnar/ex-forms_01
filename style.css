@@ -149,6 +149,34 @@
 }
 /* Estilos de los marcadores de posición */
 
+.form__item::placeholder {
+  font-size: 14px;
+  font-family: Alegreya Sans;
+  line-height: 20px;
+  color: #bcbcc4;
+}
+
+.form__item::-webkit-input-placeholder {
+  font-size: 14px;
+  font-family: Alegreya Sans;
+  line-height: 20px;
+  color: #bcbcc4;
+}
+
+.form__item::-moz-placeholder {
+  font-size: 14px;
+  font-family: Alegreya Sans;
+  line-height: 20px;
+  color: #bcbcc4;
+}
+
+.form__item::-ms-input-placeholder {
+  font-size: 14px;
+  font-family: Alegreya Sans;
+  line-height: 20px;
+  color: #bcbcc4;
+}
+
 /* Campos de entrada */
 
 .form__item_el_main-text {
@@ -193,22 +221,61 @@ select.form__item {
   border: 1px solid #bcbcc4;
 }
 
-.form__item[type="radio"] {
-  display: inline-block;
-  width: 16px;
-  height: 16px;
+.form__item_el_number-of-columns {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
 }
 
-.form__item[type="radio"][value="two-columns"] {
-  margin-left: 25px;
+.form__item_el_extra-options {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
 }
 
-.form__item[type="checkbox"] {
+.form__pseudo-item {
   display: inline-block;
-  width: 16px;
-  height: 16px;
   vertical-align: middle;
-  margin: 0;
+  width: 16px;
+  height: 16px;
+  border: 1px solid black;
+}
+
+.form__pseudo-item_type_radio {
+  border-radius: 50%;
+}
+
+.form__item_el_number-of-columns:checked + .form__pseudo-item_type_radio {
+  background-image: url(https://practicum-content.s3.us-west-1.amazonaws.com/web-code/moved_plane.svg);
+}
+
+.form__item_el_extra-options:checked + .form__pseudo-item_type_checkbox {
+  background-image: url(https://practicum-content.s3.us-west-1.amazonaws.com/web-code/moved_tick.svg);
+}
+
+.form__item_el_number-of-columns:disabled + .form__pseudo-item_type_radio {
+  border: 1px solid grey;
+}
+.form__item_el_extra-options:disabled + .form__pseudo-item_type_checkbox {
+  border: 1px solid grey;
+}
+.form__item_el_number-of-columns:disabled:checked
+  + .form__pseudo-item_type_radio {
+  background-image: url(https://practicum-content.s3.us-west-1.amazonaws.com/web-code/moved_plane_grey.svg);
+}
+.form__item_el_extra-options:disabled:checked
+  + .form__pseudo-item_type_checkbox {
+  background-image: url(https://practicum-content.s3.us-west-1.amazonaws.com/web-code/moved_tick_grey.svg);
+}
+.form__item_el_number-of-columns:focus + .form__pseudo-item_type_radio {
+  box-shadow: 0 0 5px #fff6c5;
+}
+.form__item_el_extra-options:focus + .form__pseudo-item_type_checkbox {
+  box-shadow: 0 0 5px #fff6c5;
 }
 
 .form__label_direction_right {
